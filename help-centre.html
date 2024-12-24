@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <link rel="stylesheet" href="home.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>Help Center</h1>
+</header>
+
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Type your issue here..." oninput="filterFAQs()">
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <h3>How can I reset my password?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>To reset your password, go to the login page and click on "Forgot Password?". Follow the instructions to reset it.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <h3>What should I do if I can't access a course?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>If you are unable to access a course, please check your enrollment status. If you are enrolled and still have issues, contact support.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <h3>How can I contact support?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>You can contact support via the "Contact Us" form on our website, or email us at Eduhub@gmail.com.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>If you need further assistance, please reach out to our <a href="contact.html">contact us</a>.</p>
+</footer>
+
+<script>
+// Toggle FAQ answer visibility
+function toggleAnswer(faqItem) {
+    const answer = faqItem.nextElementSibling;
+    const toggleSymbol = faqItem.querySelector('.toggle');
+    
+    if (answer.style.display === "block") {
+        answer.style.display = "none";
+        toggleSymbol.textContent = "+";
+    } else {
+        answer.style.display = "block";
+        toggleSymbol.textContent = "-";
+    }
+}
+
+// Filter FAQ items based on search input
+function filterFAQs() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+        if (question.includes(input)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

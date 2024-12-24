@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#ffffff;
+    --text-color:#22100d;
+    --second-color:#685f78;
+    --main-color:#f66962;
+    --big-font:3.8rem;
+    --h2-font:2.6rem;
+    --p-font:1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+ 
+.courses .center-text h5{
+    color: #f66962;
+    font-size: 30px;
+    text-align: center;
+}
+.courses .center-text h2{
+    color: #22100d;
+    text-align: center;
+    font-size: 45px;
+}
+.courses{
+    background: url('1728713324485.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.courses-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    cursor: pointer;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.courses-content div{
+    height: 600px;
+    width: 600px;
+}
+.row{
+    background: var(--bg-color);
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px rgb(19 8 73 / 13%);
+    transition: all .40s ease;
+}
+.row:hover{
+    transform: translateY(-15px);
+}
+.row img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.courses-text{
+    padding: 20px 10px;
+}
+.courses-text h5{
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+.courses-text h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 10px 0 10px;
+    transition: all .40s ease;
+}
+.courses-text h3:hover{
+    color: #C63BFA;
+}
+.courses-text h6{
+    color: #696969;
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.star i{
+    color: #FF046B;
+    margin-right: 2px;
+    font-size: 20px;
+}
+.review p{
+    color: #696969;
+    font-size: var(--p-font);
+    font-weight: 400;
+    letter-spacing: .1px;
+}
+
+
+.footer {
+    background-color: #222; 
+    border-top: 1px solid #444; 
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem .5rem;
+    color: #f1f1f1; 
+    margin-top: 1rem;
+    z-index: 1000;
+    
+ }
+ 
+ .footer span {
+    color: #ff6347; 
+ }
+ 

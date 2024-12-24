@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="home.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>About Us</h1>
+</header>
+<section class="img">
+    <img src="https://i.pinimg.com/564x/e7/d6/42/e7d642293782d2a8b1fa629724e2b2b5.jpg" alt="">
+</section>
+
+<section class="about">
+    <h2>Why our website?</h2>
+    <p>We believe that education is a fundamental right and a powerful tool for personal and societal growth. Our website was created to bridge gaps in access to quality learning resources, ensuring that everyone, regardless of their background, can pursue their educational aspirations.</p>
+    <h2>Our Mission</h2>
+    <p>We are dedicated to empowering individuals through education. Our mission is to provide accessible, high-quality learning experiences that inspire curiosity and foster a love for knowledge.</p>
+</section>
+
+<section class="ratings">
+    <h2>Give Ratings: <span id="overallRating">0</span></h2>
+    <div class="rating-stars" id="ratingStars">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+    </div>
+</section>
+
+<section class="reviews">
+    <h2>Give Feedback</h2>
+    
+    <div class="review-container"></div> <!-- Container for dynamic reviews -->
+    
+    <div class="review-form">
+        <input type="text" id="reviewText" placeholder="Write your review here..." required />
+        <input type="text" id="reviewAuthor" placeholder="Your name..." required />
+        <button class="add-review-btn" id="Submit" type="submit">Add a Review</button>
+    </div>
+</section>
+
+<footer>
+    <p>If you need help, visit our <a href="help-centre.html">Help Center</a>.</p>
+</footer>
+
+<script src="home.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
