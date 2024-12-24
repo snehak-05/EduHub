@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="newcss.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Course Layout Section with Circular Progress -->
+        <div class="course-layout">
+         <h1>Course Layout</h1>
+         <hr>
+            <section class="timeline-area">
+               <div>
+                  <h2>Lecture 1</h2>
+                  <h3>Introduction to html</h3>
+                  <h4>10:00 min</h4>
+               </div>
+               <hr>
+               <div>
+                  <h2>Lecture 2</h2>
+                  <h3>Line breaks, spacing, <br>and comments</h3>
+                  <h4>6:30 min</h4>
+               </div><br>
+               <hr>
+               <div>
+                  <h2>Lecture 3</h2>
+                  <h3>Ordered and Unordered<br>lists</h3>
+                  <h4>4:05 min</h4>
+               </div>
+               <hr>
+               <div>
+                  <h2>Lecture 4</h2>
+                  <h3>Creating a table</h3>
+                  <h4>4:12 min</h4>
+               </div>
+               <hr>
+               <div>
+                  <h2>Lecture 5</h2>
+                  <h3>Creating a web link</h3>
+                  <h4>3:15 min</h4>
+               </div>
+               <hr>
+               <div>
+                  <h2>Lecture 6</h2>
+                  <h3>Creating links within <br>same web page</h3>
+                  <h4>4:15 min</h4>
+               </div>
+               <hr>
+               <div>
+                  <a href=""><h3 class="quiz">Quiz</h3></a>
+               </div>
+            </section>
+        </div>
+
+        <!-- Video and Comments Section with shared scrollbar -->
+        <div class="content-section">
+            <div class="scrollable-content">
+                <div class="watch-video">
+                    <section class="watch-video">
+
+                        <div class="video-container">
+                           <div class="video">
+                              <video src="C:\Users\sneha\OneDrive\Desktop\fee-courses-videos\vid-5.mp4" controls poster="https://i.pinimg.com/564x/9b/8d/6d/9b8d6d75e6784a701391e2ad6f607077.jpg" id="video"></video>
+                           </div>
+                           <h3 class="title">Complete HTML tutorial (part 05)</h3>
+                           <div class="info">
+                              <p class="date"><i class="fas fa-calendar"></i><span>22-10-2023</span></p>
+                              <p class="date"><i class="fas fa-heart"></i><span>44 likes</span></p>
+                           </div>
+                           <div class="tutor">
+                              <img src="https://static.vecteezy.com/system/resources/previews/014/194/232/original/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg" alt="">
+                              <div>
+                                 <h3>Mr Jatin Arora</h3>
+                                 <span>tutor</span>
+                              </div>
+                           </div>
+                           <form action="" method="post" class="flex">
+                              <a href="html-course.html" class="inline-btn">view playlist</a>
+                              <button><i class="far fa-heart"></i><span>like</span></button>
+                           </form>
+                           <p class="description">
+                              HTML is a foundational language used to create and structure content on the web. It plays a crucial role in designing web pages by allowing the use of elements such as headings, paragraphs, images, links, and more.
+                              In this course, you'll learn the basics of HTML, from creating simple web pages to implementing more complex layouts. You'll also explore how HTML works in conjunction with CSS and JavaScript to create fully interactive and visually appealing websites.
+                           </p>
+                        </div>
+                     
+                     </section>
+                    <!-- Video content goes here -->
+                </div>
+                <div class="comments-section">
+                    <section class="comments">
+
+                     <h1 class="heading">5 comments</h1>
+
+                     <form action="" class="add-comment" id="commentForm">
+                         <h3>Add Comments</h3>
+                         <textarea name="comment_box" placeholder="Enter your comment" required maxlength="1000" cols="30" rows="10"></textarea>
+                         <input type="submit" value="Add Comment" class="inline-btn" name="add_comment">
+                     </form>
+             
+                     <h1 class="heading">User Comments</h1>
+             
+                     <div class="box-container" id="commentsContainer">
+                         <!-- Existing comments will be here -->
+                     </div>
+                     
+                        <div class="box-container">
+                     
+                           
+                     
+                           <div class="box">
+                              <div class="user">
+                                 <img src="https://tse2.mm.bing.net/th?id=OIP.jtRO1wyV6uRKzNK-NIQ97AHaHa&pid=Api&P=0&h=220" alt="">
+                                 <div>
+                                    <h3>swati arora</h3>
+                                    <span>22-10-2023</span>
+                                 </div>
+                              </div>
+                              <div class="comment-box">awesome tutorial!
+                                 keep going!</div>
+                           </div>
+                     
+                           <div class="box">
+                              <div class="user">
+                                 <img src="https://image.freepik.com/free-vector/man-profile-cartoon_18591-58482.jpg" alt="">
+                                 <div>
+                                    <h3>manan</h3>
+                                    <span>22-10-2023</span>
+                                 </div>
+                              </div>
+                              <div class="comment-box">amazing way of teaching!
+                                 thank you so much!
+                              </div>
+                           </div>
+                     
+                           <div class="box">
+                              <div class="user">
+                                 <img src="https://static.vecteezy.com/system/resources/previews/009/749/643/original/woman-profile-mascot-illustration-female-avatar-character-icon-cartoon-girl-head-face-business-user-logo-free-vector.jpg" alt="">
+                                 <div>
+                                    <h3>simran</h3>
+                                    <span>22-10-2023</span>
+                                 </div>
+                              </div>
+                              <div class="comment-box">loved it, thanks for the tutorial!</div>
+                           </div>
+                     
+                           <div class="box">
+                              <div class="user">
+                                 <img src="https://static.vecteezy.com/system/resources/previews/009/749/832/original/boy-avatar-icon-cartoon-young-guy-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg" alt="">
+                                 <div>
+                                    <h3>aryan kalia</h3>
+                                    <span>22-10-2023</span>
+                                 </div>
+                              </div>
+                              <div class="comment-box">this is what I have been looking for! thank you so much!</div>
+                           </div>
+                     
+                           <div class="box">
+                              <div class="user">
+                                 <img src="https://tse3.mm.bing.net/th?id=OIP.ByNkifVPWm-R7eYaW4BdpgHaHa&pid=Api&P=0&h=220" alt="">
+                                 <div>
+                                    <h3>shriyansh verma</h3>
+                                    <span>22-10-2023</span>
+                                 </div>
+                              </div>
+                              <div class="comment-box">thanks for the tutorial!
+                     
+                                 how to download source code file?
+                              </div>
+                           </div>
+                     
+                        </div>
+                     
+                     </section>
+                     
+                    <!-- Comments go here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="py1_js.js"></script>
+</body>
+</html>
+
